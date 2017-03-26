@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>OFFER</Name>
+  <ID>tbl_OFFER</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="OFFER_NUM" id="tblCol_4c96c4092d2e4a0786d3cb0f9d23c3bf" index="0" datatype="Integer" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_d21dd9bdf61f41cba66c8ae71ea2fdb2" index="1" datatype="Integer" />
+    <Column name="OFFER_NAME" id="tblCol_5c07ee3442ae4f6d88824bc40bd923c0" index="2" datatype="Text" />
+    <Column name="OFFER_PRICE" id="tblCol_a6d756ed9c7641caa4fab226a76aa385" index="3" datatype="Integer" />
+    <Column name="OFFER_STATUS" id="tblCol_af61a28ef2c7431ebbed54c46c64a7f4" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

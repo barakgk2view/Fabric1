@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PAYMENT</Name>
+  <ID>tbl_PAYMENT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PAYMENT_NO" id="tblCol_cd7d6bbb0b2740e0bc7ea52a81a0a3c7" index="0" datatype="Integer" />
+    <Column name="PAYMENT_DATE" id="tblCol_f67d3f233f7e404e9496d1a47474a84f" index="1" datatype="Text" />
+    <Column name="CUSTOMER_ID" id="tblCol_a947e6a78b184961a173b0a7169516a1" index="2" datatype="Integer" />
+    <Column name="PAYMENT_AMOUNT" id="tblCol_b6accefbe056415999ac839a443f969c" index="3" datatype="Real" />
+    <Column name="PAYMENT_TYPE" id="tblCol_68e9c41eeda34b8d9ccdb6a9dcb954b0" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

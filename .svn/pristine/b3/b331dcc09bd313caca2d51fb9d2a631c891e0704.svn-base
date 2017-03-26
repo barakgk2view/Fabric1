@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_DEVICE</ID>
+  <PopulationObjectName>query_DEVICE</PopulationObjectName>
+  <TableName>DEVICE</TableName>
+  <RootItemID>query_query_DEVICE</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="DEVICE_NUM" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="SUBSCRIBER_NO" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="DEVICE_TYPE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="DEVICE_STATUS" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_DEVICE" name="query_DEVICE" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOraSource">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="DEVICE_NUM" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="SUBSCRIBER_NO" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="DEVICE_TYPE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="DEVICE_STATUS" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM DEVICE]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_DEVICE" fromColID="queryCol_0" toItemID="tbl_DEVICE" toColID="tblCol_5562b5605eed4654b02032314d7503df" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_DEVICE" fromColID="queryCol_1" toItemID="tbl_DEVICE" toColID="tblCol_97f078b0c48a4c6ea35932ba0b8180e6" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_DEVICE" fromColID="queryCol_2" toItemID="tbl_DEVICE" toColID="tblCol_27dbada7e4f94896be85cfe1059238b2" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_DEVICE" fromColID="queryCol_3" toItemID="tbl_DEVICE" toColID="tblCol_186d72d4bb5046ce8458390e47962536" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

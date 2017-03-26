@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>trnMarket2State</Name>
+  <InputNotFoundAction>Use_Default</InputNotFoundAction>
+  <SchemaColumns>
+    <Column>
+      <Title>Market_nr</Title>
+      <ColumnName>Market_nr</ColumnName>
+      <Direction>Input</Direction>
+      <Type>Integer</Type>
+      <Length>6</Length>
+      <Format />
+      <Index>0</Index>
+      <AllowNULL>true</AllowNULL>
+      <GridColumnProperties width="81" />
+    </Column>
+    <Column>
+      <Title>State_number</Title>
+      <ColumnName>State_number</ColumnName>
+      <Direction>Output</Direction>
+      <Type>Integer</Type>
+      <Length>6</Length>
+      <Format />
+      <Index>0</Index>
+      <DefaultValue>1</DefaultValue>
+      <DefaultValueIsExpression>false</DefaultValueIsExpression>
+      <AllowNULL>true</AllowNULL>
+      <GridColumnProperties width="87" />
+    </Column>
+  </SchemaColumns>
+  <IsImportFromSQL>false</IsImportFromSQL>
+  <IsDynamicData>false</IsDynamicData>
+  <ColumnMapping />
+  <TranslationData>
+    <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="trnMarket2State" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="trnMarket2State">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Market_nr" type="xs:long" minOccurs="0" />
+                  <xs:element name="State_number" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+      <DocumentElement>
+        <trnMarket2State diffgr:id="trnMarket2State1" msdata:rowOrder="0">
+          <Market_nr>11</Market_nr>
+          <State_number>1</State_number>
+        </trnMarket2State>
+        <trnMarket2State diffgr:id="trnMarket2State2" msdata:rowOrder="1">
+          <Market_nr>22</Market_nr>
+          <State_number>2</State_number>
+        </trnMarket2State>
+        <trnMarket2State diffgr:id="trnMarket2State3" msdata:rowOrder="2">
+          <Market_nr>33</Market_nr>
+          <State_number>3</State_number>
+        </trnMarket2State>
+        <trnMarket2State diffgr:id="trnMarket2State4" msdata:rowOrder="3">
+          <Market_nr>44</Market_nr>
+          <State_number>4</State_number>
+        </trnMarket2State>
+        <trnMarket2State diffgr:id="trnMarket2State5" msdata:rowOrder="4">
+          <Market_nr>55</Market_nr>
+          <State_number>5</State_number>
+        </trnMarket2State>
+        <trnMarket2State diffgr:id="trnMarket2State6" msdata:rowOrder="5">
+          <Market_nr>66</Market_nr>
+          <State_number>1</State_number>
+        </trnMarket2State>
+      </DocumentElement>
+    </diffgr:diffgram>
+  </TranslationData>
+  <DataRowsHeight>20</DataRowsHeight>
+</Translation>

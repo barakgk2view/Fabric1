@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DEVICE</Name>
+  <ID>tbl_DEVICE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="DEVICE_NUM" id="tblCol_5562b5605eed4654b02032314d7503df" index="0" datatype="Integer" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_97f078b0c48a4c6ea35932ba0b8180e6" index="1" datatype="Integer" />
+    <Column name="DEVICE_TYPE" id="tblCol_27dbada7e4f94896be85cfe1059238b2" index="2" datatype="Text" />
+    <Column name="DEVICE_STATUS" id="tblCol_186d72d4bb5046ce8458390e47962536" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

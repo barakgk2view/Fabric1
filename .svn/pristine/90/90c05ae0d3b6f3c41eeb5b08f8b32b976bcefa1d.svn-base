@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_OFFER</ID>
+  <PopulationObjectName>query_OFFER</PopulationObjectName>
+  <TableName>OFFER</TableName>
+  <RootItemID>query_query_OFFER</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="OFFER_NUM" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="SUBSCRIBER_NO" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="OFFER_NAME" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="OFFER_PRICE" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="OFFER_STATUS" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_OFFER" name="query_OFFER" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOraSource">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="OFFER_NUM" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="SUBSCRIBER_NO" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="OFFER_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="OFFER_PRICE" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="OFFER_STATUS" dataType="Text" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM OFFER]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_OFFER" fromColID="queryCol_0" toItemID="tbl_OFFER" toColID="tblCol_4c96c4092d2e4a0786d3cb0f9d23c3bf" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_OFFER" fromColID="queryCol_1" toItemID="tbl_OFFER" toColID="tblCol_d21dd9bdf61f41cba66c8ae71ea2fdb2" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_OFFER" fromColID="queryCol_2" toItemID="tbl_OFFER" toColID="tblCol_5c07ee3442ae4f6d88824bc40bd923c0" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_OFFER" fromColID="queryCol_3" toItemID="tbl_OFFER" toColID="tblCol_a6d756ed9c7641caa4fab226a76aa385" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_OFFER" fromColID="queryCol_4" toItemID="tbl_OFFER" toColID="tblCol_af61a28ef2c7431ebbed54c46c64a7f4" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SUBSCRIBER</Name>
+  <ID>tbl_SUBSCRIBER</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="SUBSCRIBER_NO" id="tblCol_0ea18ee277144f88bcdc5df9ad27838d" index="0" datatype="Integer" />
+    <Column name="CUSTOMER_ID" id="tblCol_52a42377fb4046b2b53f39e5b8861baf" index="1" datatype="Integer" />
+    <Column name="MARKET" id="tblCol_576a86e6194a4ef6bf7e5d7ef6994297" index="2" datatype="Integer" />
+    <Column name="SUB_STATUS" id="tblCol_5fe98bcdf55a4441bfd939ed9b3d2b10" index="3" datatype="Text" />
+    <Column name="MARKET_DESC" id="tblCol_cabc6ba86aba48aabdf81dca23317e4a" index="4" datatype="text" />
+    <Column name="STATE_CODE" id="tblCol_56a4e7e7f13a43728f799ffab1284ae5" index="5" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

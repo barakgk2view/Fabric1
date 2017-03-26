@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetCustomerAddress</Name>
+  <ID>LegacyDB.funGetCustomerAddress</ID>
+  <Category>LegacyDB</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+String sql = "SELECT CUSTOMER_ID, HOUSE_NUMBER, STREET, CITY, COUNTRY, ZIPCODE, POBOX FROM ADDRESS where CUSTOMER_ID=  "+CUSTOMER_ID;
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("dbOraSource", sql, valuesArr);
+
+for(Object[] row : rs) {
+	yield(row);
+}
+
+rs.closeStmt();
+
+Object[] dummy_row = {CUSTOMER_ID, "Dummy1", "Dummy1", "Dummy1", "Dummy1", "Dummy1", "Dummy1"};
+yield(dummy_row);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.LegacyDB.funGetCustomerAddress.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.LegacyDB.funGetCustomerAddress.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="HOUSE_NUMBER" id="fo.LegacyDB.funGetCustomerAddress.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="STREET" id="fo.LegacyDB.funGetCustomerAddress.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CITY" id="fo.LegacyDB.funGetCustomerAddress.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COUNTRY" id="fo.LegacyDB.funGetCustomerAddress.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ZIPCODE" id="fo.LegacyDB.funGetCustomerAddress.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="POBOX" id="fo.LegacyDB.funGetCustomerAddress.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

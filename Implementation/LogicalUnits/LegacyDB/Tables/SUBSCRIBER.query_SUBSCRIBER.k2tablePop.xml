@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_SUBSCRIBER</ID>
+  <PopulationObjectName>query_SUBSCRIBER</PopulationObjectName>
+  <TableName>SUBSCRIBER</TableName>
+  <RootItemID>query_query_SUBSCRIBER</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="SUBSCRIBER_NO" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="CUSTOMER_ID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="MARKET" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="SUB_STATUS" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_SUBSCRIBER" name="query_SUBSCRIBER" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOraSource">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="SUBSCRIBER_NO" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CUSTOMER_ID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="MARKET" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="SUB_STATUS" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM SUBSCRIBER]]></SQL>
+    </Item>
+    <Item id="f_61" name="funGetMarketDescAndState" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="funGetMarketDescAndState.k2function.xml">
+      <InputsList>
+        <Input id="fi_61.0" name="market_code" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_61.0" name="market_desc" />
+        <Output id="fo_61.1" name="state_code" />
+      </OutputsList>
+    </Item>
+    <Item id="f_113" name="funGetStateCode" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="funGetStateCode.k2function.xml">
+      <InputsList>
+        <Input id="fi_113.0" name="market_code" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_113.0" name="state_code" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_0" toItemID="tbl_SUBSCRIBER" toColID="tblCol_0ea18ee277144f88bcdc5df9ad27838d" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_1" toItemID="tbl_SUBSCRIBER" toColID="tblCol_52a42377fb4046b2b53f39e5b8861baf" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_2" toItemID="tbl_SUBSCRIBER" toColID="tblCol_576a86e6194a4ef6bf7e5d7ef6994297" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_3" toItemID="tbl_SUBSCRIBER" toColID="tblCol_5fe98bcdf55a4441bfd939ed9b3d2b10" />
+    <Link partId="66" fromNodeOrder="1" fromItemID="f_61" fromColID="fo_61.0" toItemID="tbl_SUBSCRIBER" toColID="tblCol_cabc6ba86aba48aabdf81dca23317e4a" />
+    <Link partId="65" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_2" toItemID="f_61" toColID="fi_61.0" />
+    <Link partId="117" fromNodeOrder="1" fromItemID="f_113" fromColID="fo_113.0" toItemID="tbl_SUBSCRIBER" toColID="tblCol_56a4e7e7f13a43728f799ffab1284ae5" />
+    <Link partId="116" fromNodeOrder="0" fromItemID="query_query_SUBSCRIBER" fromColID="queryCol_2" toItemID="f_113" toColID="fi_113.0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

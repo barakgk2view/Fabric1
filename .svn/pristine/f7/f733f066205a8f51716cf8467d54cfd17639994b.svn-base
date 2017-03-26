@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CUSTOMER</Name>
+  <ID>tbl_CUSTOMER</ID>
+  <EntityId>tblCol_3ee44687344b4f069d0144198e9e74b0</EntityId>
+  <LazyDataUpdate enabled="true" performEvery="00:00:10" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_3ee44687344b4f069d0144198e9e74b0" index="0" datatype="Integer" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_9a00d96904124b4fabcc4c1aa9149d80" index="1" datatype="Text" />
+    <Column name="FIRST_NAME" id="tblCol_2f5de4ddc20a44d996492adc488d6936" index="2" datatype="Text" />
+    <Column name="LAST_NAME" id="tblCol_935929bb1ec84cf991b9030b5d935b1a" index="3" datatype="Text" />
+    <Column name="CREDIT_SCORE" id="tblCol_0107bd919c644d6bb937717faa42807d" index="4" datatype="Integer" />
+    <Column name="DOB" id="tblCol_a221613955014fc98ef59b12de6e80c5" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

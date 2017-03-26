@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>refMARKETS</Name>
+  <ID>tbl_refMARKETS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="MARKET_NR" id="tblCol_eac0bed97d364bde87f49f9022426489" index="0" datatype="Integer" />
+    <Column name="MARKET_DESC" id="tblCol_16a6c5c676bb4b898f8b4a370830b927" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

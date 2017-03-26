@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ADDRESS</Name>
+  <ID>tbl_ADDRESS</ID>
+  <LazyDataUpdate enabled="true" performEvery="00:00:10" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_3411c19bfe7749e9a0120051e66ec8af" index="0" datatype="Integer" />
+    <Column name="HOUSE_NUMBER" id="tblCol_8840b9f741ba42e3b1ca6a2f51ba65b4" index="1" datatype="Text" />
+    <Column name="STREET" id="tblCol_cd75e404b62b4cf8ac588f758b01896d" index="2" datatype="Text" />
+    <Column name="CITY" id="tblCol_045f8a4721bb4cfcb0bac835ce1bd2a3" index="3" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_c08ec6a076824f14866432cbf200f9fc" index="4" datatype="Text" />
+    <Column name="ZIPCODE" id="tblCol_cf0940e0a42846feb344a317c9248993" index="5" datatype="Text" />
+    <Column name="POBOX" id="tblCol_8725dbcec44f4b63a59015186b8698d0" index="6" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

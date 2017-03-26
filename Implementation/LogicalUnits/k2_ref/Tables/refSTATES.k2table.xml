@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>refSTATES</Name>
+  <ID>tbl_refSTATES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="STATE_CODE" id="tblCol_aa9517c5fb62423d859d9f2a0685612d" index="0" datatype="Text" mandatory="true" />
+    <Column name="STATE_NAME" id="tblCol_44968fdbb94c4c5bbb1aedf0fd40849c" index="1" datatype="Text" />
+    <Column name="STATE_NUMBER" id="tblCol_d66eec99f18a42a2abd9293002950aae" index="2" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_aa9517c5fb62423d859d9f2a0685612d" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

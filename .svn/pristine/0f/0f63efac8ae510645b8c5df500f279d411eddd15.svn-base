@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_MARKETS</ID>
+  <PopulationObjectName>query_MARKETS</PopulationObjectName>
+  <TableName>refMARKETS</TableName>
+  <RootItemID>query_query_MARKETS</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="MARKET_NR" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="MARKET_DESC" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_MARKETS" name="query_MARKETS" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOraSource">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="MARKET_NR" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="MARKET_DESC" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM MARKETS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_MARKETS" fromColID="queryCol_0" toItemID="tbl_refMARKETS" toColID="tblCol_eac0bed97d364bde87f49f9022426489" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_MARKETS" fromColID="queryCol_1" toItemID="tbl_refMARKETS" toColID="tblCol_16a6c5c676bb4b898f8b4a370830b927" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

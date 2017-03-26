@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Dummy_Address</ID>
+  <PopulationObjectName>query_Dummy_Address</PopulationObjectName>
+  <TableName>ADDRESS</TableName>
+  <RootItemID>f_10</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_10.0" dataType="Long" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_10" name="funGetCustomerDummyAddress" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="funGetCustomerDummyAddress.k2function.xml">
+      <InputsList>
+        <Input id="fi_10.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_10.0" name="CUSTOMER_ID" />
+        <Output id="fo_10.1" name="HOUSE_NUMBER" />
+        <Output id="fo_10.2" name="STREET" />
+        <Output id="fo_10.3" name="CITY" />
+        <Output id="fo_10.4" name="COUNTRY" />
+        <Output id="fo_10.5" name="ZIPCODE" />
+        <Output id="fo_10.6" name="POBOX" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="19" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.0" toItemID="tbl_ADDRESS" toColID="tblCol_3411c19bfe7749e9a0120051e66ec8af" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.1" toItemID="tbl_ADDRESS" toColID="tblCol_8840b9f741ba42e3b1ca6a2f51ba65b4" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.2" toItemID="tbl_ADDRESS" toColID="tblCol_cd75e404b62b4cf8ac588f758b01896d" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.3" toItemID="tbl_ADDRESS" toColID="tblCol_045f8a4721bb4cfcb0bac835ce1bd2a3" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.4" toItemID="tbl_ADDRESS" toColID="tblCol_c08ec6a076824f14866432cbf200f9fc" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.5" toItemID="tbl_ADDRESS" toColID="tblCol_cf0940e0a42846feb344a317c9248993" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.6" toItemID="tbl_ADDRESS" toColID="tblCol_8725dbcec44f4b63a59015186b8698d0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

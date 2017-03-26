@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_STATES</ID>
+  <PopulationObjectName>query_STATES</PopulationObjectName>
+  <TableName>refSTATES</TableName>
+  <RootItemID>query_query_STATES</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="STATE_CODE" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="STATE_NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="STATE_NUMBER" id="queryCol_2" dataType="Integer" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_STATES" name="query_STATES" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOraSource">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="STATE_CODE" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="STATE_NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="STATE_NUMBER" dataType="Integer" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM STATES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_STATES" fromColID="queryCol_0" toItemID="tbl_refSTATES" toColID="tblCol_aa9517c5fb62423d859d9f2a0685612d" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_STATES" fromColID="queryCol_1" toItemID="tbl_refSTATES" toColID="tblCol_44968fdbb94c4c5bbb1aedf0fd40849c" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_STATES" fromColID="queryCol_2" toItemID="tbl_refSTATES" toColID="tblCol_d66eec99f18a42a2abd9293002950aae" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

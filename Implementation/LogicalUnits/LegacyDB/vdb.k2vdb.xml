@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.1.0.7">
+  <Name>vdb</Name>
+  <RootView>CUSTOMER</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>CUSTOMER</Table>
+    <Table>INVOICE</Table>
+    <Table>PAYMENT</Table>
+    <Table>SUBSCRIBER</Table>
+    <Table>ADDRESS</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="CUSTOMER">
+      <Populations>
+        <Population id="query_CUSTOMER" name="query_CUSTOMER" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INVOICE">
+      <Populations>
+        <Population id="query_INVOICE" name="query_INVOICE" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="PAYMENT">
+      <Populations>
+        <Population id="query_PAYMENT" name="query_PAYMENT" order="3" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SUBSCRIBER">
+      <Populations>
+        <Population id="query_SUBSCRIBER" name="query_SUBSCRIBER" order="4" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ADDRESS">
+      <Populations>
+        <Population id="query_ADDRESS" name="query_ADDRESS" order="5" disabled="false" enrichment="false" />
+        <Population id="query_Dummy_Address" name="query_Dummy_Address" order="6" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="true" name="refMARKETS" />
+    <Item active="true" name="refSTATES" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="101">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_3ee44687344b4f069d0144198e9e74b0" />
+      <To tableType="TableObject" table="INVOICE" populationObjectName="query_INVOICE" column="CUSTOMER_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="102">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_3ee44687344b4f069d0144198e9e74b0" />
+      <To tableType="TableObject" table="PAYMENT" populationObjectName="query_PAYMENT" column="CUSTOMER_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="103">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_3ee44687344b4f069d0144198e9e74b0" />
+      <To tableType="TableObject" table="SUBSCRIBER" populationObjectName="query_SUBSCRIBER" column="CUSTOMER_ID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="383">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_3ee44687344b4f069d0144198e9e74b0" />
+      <To tableType="TableObject" table="ADDRESS" populationObjectName="query_ADDRESS" column="CUSTOMER_ID" columnId="fi_41.0" />
+    </Relation>
+    <Relation id="820">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_3ee44687344b4f069d0144198e9e74b0" />
+      <To tableType="TableObject" table="ADDRESS" populationObjectName="query_Dummy_Address" column="CUSTOMER_ID" columnId="fi_10.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>INVOICE</Name>
+  <ID>tbl_INVOICE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="INVOICE_NO" id="tblCol_1f245bb45c6c4cc48616f76a8ecc65bf" index="0" datatype="Integer" />
+    <Column name="INVOICE_TYPE" id="tblCol_2286be0728604c1eb4e9da7cb6ae834a" index="1" datatype="Text" />
+    <Column name="CUSTOMER_ID" id="tblCol_9071f0488b04417ca14a05f513a52295" index="2" datatype="Integer" />
+    <Column name="INVOICE_DATE" id="tblCol_6f834218d4734c5fb46fcb016b26b6b5" index="3" datatype="Text" />
+    <Column name="INVOICE_STATUS" id="tblCol_8821d5f1cc894bc8855d65533e63013e" index="4" datatype="Text" />
+    <Column name="INVOICE_AMOUNT" id="tblCol_2eec846c34404d0ca36fbb0e409d8725" index="5" datatype="Real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

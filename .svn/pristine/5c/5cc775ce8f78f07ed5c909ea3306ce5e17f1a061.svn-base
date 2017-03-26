@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetMarketDescAndState</Name>
+  <ID>Reference.funGetMarketDescAndState</ID>
+  <Category>Reference</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "select MARKET_DESC FROM refMARKETS where MARKET_NR=" + market_code;
+String market_desc = (String)DBSelectValue("ludb", sql, null);
+int state_number ;
+switch (market_code) {
+     case 11:  state_number = 1;
+              break;
+	 case 22:  state_number = 2;
+              break;
+     default: state_number = 5;
+              break;
+}
+String sql2 = "SELECT STATE_CODE FROM REFSTATES where STATE_NUMBER=" + state_number;
+String state_code = (String)DBSelectValue("ludb", sql2, null);
+return new Object[] {market_desc,state_code};</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="market_code" id="fi.Reference.funGetMarketDescAndState.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="market_desc" id="fo.Reference.funGetMarketDescAndState.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="state_code" id="fo.Reference.funGetMarketDescAndState.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

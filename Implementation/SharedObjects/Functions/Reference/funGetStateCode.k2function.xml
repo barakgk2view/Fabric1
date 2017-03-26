@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetStateCode</Name>
+  <ID>Reference.funGetStateCode</ID>
+  <Category>Reference</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+String[] trnValues = {(String)market_code.toString()};
+Map trn = getTranslationValues("trnMarket2State", trnValues);
+String state_number =  (String)trn.get("State_number");
+//String state_number_text = (String)state_number.toString();
+String sql = "SELECT STATE_CODE FROM REFSTATES where STATE_NUMBER=" + state_number;
+String state_code = (String)DBSelectValue("ludb", sql, null);
+
+return  state_code;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="market_code" id="fi.Reference.funGetStateCode.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="state_code" id="fo.Reference.funGetStateCode.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>
